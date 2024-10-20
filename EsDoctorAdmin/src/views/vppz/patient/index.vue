@@ -14,7 +14,9 @@
         <el-table ref="table" :data="tableData">
             <el-table-column label="患者姓名" prop="username" width="120px" />
             <el-table-column label="性别" prop="sex" :align="'center'" width="80px" />
+            <el-table-column label="患者年龄" prop="age" :align="'center'" />
             <el-table-column label="患者电话" prop="usernamePhone" :align="'center'" />
+            <el-table-column label="患者病因" prop="disease"></el-table-column>
             <el-table-column label="就诊科室" prop="department" :align="'center'" />
             <el-table-column label="就诊医生" prop="doctor" :align="'center'" />
             <el-table-column label="就诊医生手机号" prop="doctorPhone" :align="'center'" />
@@ -65,9 +67,11 @@ const tableData = reactive([
     {
         username: '小雨',
         sex: '1',
+        age:'18',
         department: '儿科',
         doctor: '',
         usernamePhone: '13845766658',
+        disease:'',
         doctorPhone: '',
         createTime: '',
         cost: '100',
