@@ -30,3 +30,6 @@ npm install -D unplugin-vue-components unplugin-auto-import
 这里用插件模式存到浏览器
 
 插件下载：npm install vuex-persistedstate
+### 折线图
+需要下载npm install chart vue-chartjs
+封装到components下BarChart.vue
